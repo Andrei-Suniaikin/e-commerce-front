@@ -1,7 +1,7 @@
 import axios from "axios";
 import type {SearchRequest, SearchResponse} from "../types/types.ts";
 
-const API_URL = import.meta.env.BASE_URL;
+const API_URL = import.meta.env.VITE_BASE_URL;
 
 export async function fetchProducts(request: SearchRequest): Promise<SearchResponse>{
     try {
